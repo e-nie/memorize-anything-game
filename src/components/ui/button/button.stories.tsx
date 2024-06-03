@@ -4,6 +4,12 @@ import { Button } from "./";
 
 // -----in every story
 const meta = {
+  argTypes: {
+    variant: {
+      // control: { type: 'radio' },
+      options: ["primary", "secondary", "tertiary", "link"],
+    },
+  },
   component: Button,
   tags: ["autodocs"],
   title: "Components/Button",
@@ -52,6 +58,6 @@ export const AsLink: Story = {
     as: "a",
     children: "Link that looks like a button",
     disabled: false,
-    variant: "primary",
+    variant: "link",
   },
 };
