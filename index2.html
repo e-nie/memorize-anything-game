@@ -1,0 +1,48 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--  <head>-->
+<!--    <meta charset="UTF-8" />-->
+<!--    <link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+<!--    <link-->
+<!--      rel="stylesheet"-->
+<!--      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"-->
+<!--    />-->
+<!--    <title>Document</title>-->
+
+<!--    </style>-->
+<!--  </head>-->
+
+<!--  <body>-->
+<!--    <main class='container'>-->
+<!--      <form id='login-form' method='post' >-->
+<!--        <label> Email <input name="email" /></label>-->
+<!--        <label> Password <input name="password" type='password'/></label>-->
+<!--        <label> Remember Me <input type="checkbox" name="rememberMe" /></label>-->
+<!--        <button>Sign In</button>-->
+<!--      </form>-->
+<!--      <script>-->
+<!--        const formElement = document.getElementById('login-form');-->
+<!--        formElement.addEventListener('submit', (e) => {-->
+<!--          e.preventDefault();-->
+<!--          const formData = new FormData(e.target);-->
+<!--          const object = {};-->
+<!--          const json = JSON.stringify(object);-->
+<!--          formData.forEach((value, key) => {-->
+<!--            object[key] = value;-->
+<!--          });-->
+<!--          fetch('https://api.flashcards.andrii.es/v1/auth/login',-->
+<!--            {-->
+<!--              method: 'POST',-->
+<!--              body: json,-->
+<!--              credentials: 'include',-->
+
+<!--            }).then(res=>res.json()).then(console.log)-->
+<!--          for(let entry of formData.entries()) {-->
+<!--            console.log(entry);-->
+<!--          }-->
+<!--        })-->
+<!--      </script>-->
+<!--    </main>-->
+<!--  </body>-->
+<!--</html>-->
